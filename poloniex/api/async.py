@@ -87,7 +87,7 @@ def trollbox_wrapper(handler):
 
 
 class PushApi:
-    url = "wss://api2.poloniex.com"
+    url = "wss://api2.poloniex.com:443/"
 
     def __init__(self, session):
         self.wamp = WAMPClient(url=self.url, session=session)
